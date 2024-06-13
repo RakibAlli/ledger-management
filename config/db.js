@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const MongoDB = mongoose.connect('mongodb+srv://rakib:Rakib%401999@cluster0.bwxs7wf.mongodb.net/ledger-management', { useNewUrlParser: true });
+const MongoDB = mongoose.connect('mongodb+srv://rakib:Rakib%401999@cluster0.bwxs7wf.mongodb.net/ledger-management', { useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
 });
